@@ -6,6 +6,6 @@ lexer.o: lexer.c
 	gcc -c lexer.c
 lexer.c: lexer.l
 	flex -t lexer.l > lexer.c
-
+.PHONY: clean
 clean:
 	rm *.o count_words lexer.c
